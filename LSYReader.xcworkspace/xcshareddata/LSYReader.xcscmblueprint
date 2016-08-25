@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5247AB8B79DDA035C5382408B1B3C357C959A7EB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "042c7ffe-e9fc-e94d-bf4a-3b020b6cf963++6109" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "042c7ffe-e9fc-e94d-bf4a-3b020b6cf963++6109" : 0,
+    "5247AB8B79DDA035C5382408B1B3C357C959A7EB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9236C545-B598-4AD7-A6B2-48CC8B989765",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "042c7ffe-e9fc-e94d-bf4a-3b020b6cf963++6109" : "LiteReaderApp\/",
+    "5247AB8B79DDA035C5382408B1B3C357C959A7EB" : "MyProject\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LSYReader",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LSYReader.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/tc-scm.tencent.com\/mqq\/mqq_qqbrowser_rep",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "042c7ffe-e9fc-e94d-bf4a-3b020b6cf963++6109"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mobyzhang\/MyProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5247AB8B79DDA035C5382408B1B3C357C959A7EB"
+    }
+  ]
+}
