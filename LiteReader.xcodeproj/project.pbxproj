@@ -116,6 +116,18 @@
 		ABE8ABE21CFED88300693078 /* bg_back_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE8ABE01CFED88300693078 /* bg_back_white@2x.png */; };
 		ABE8ABE41CFED8CE00693078 /* reader_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE8ABE31CFED8CE00693078 /* reader_more@2x.png */; };
 		ABE8ABE71D02A99300693078 /* r_drag-dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE8ABE61D02A99300693078 /* r_drag-dot@2x.png */; };
+		BD8918E61D72C8CF000FC1B3 /* NewBookListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8918E51D72C8CF000FC1B3 /* NewBookListModel.m */; };
+		BD8918E91D72CA84000FC1B3 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8918E81D72CA84000FC1B3 /* MovieTableViewCell.m */; };
+		BD8918ED1D72D45E000FC1B3 /* NewBookListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8918EC1D72D45E000FC1B3 /* NewBookListTableViewController.m */; };
+		BD8918EF1D72DFA0000FC1B3 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = BD8918EE1D72DFA0000FC1B3 /* placeholder.png */; };
+		BD8918F21D72E082000FC1B3 /* DetailsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8918F11D72E082000FC1B3 /* DetailsWebViewController.m */; };
+		BD8918F51D72E474000FC1B3 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8918F41D72E474000FC1B3 /* NewsTableViewController.m */; };
+		BD8918F81D72E504000FC1B3 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8918F71D72E504000FC1B3 /* NewsModel.m */; };
+		BD8918FB1D72E5FC000FC1B3 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8918FA1D72E5FC000FC1B3 /* MovieModel.m */; };
+		BD8918FE1D7318A5000FC1B3 /* MovieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8918FD1D7318A5000FC1B3 /* MovieTableViewController.m */; };
+		BD8919011D731A66000FC1B3 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8919001D731A66000FC1B3 /* GameModel.m */; };
+		BD8919041D731BC6000FC1B3 /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8919031D731BC6000FC1B3 /* GameTableViewCell.m */; };
+		BD8919071D731DE2000FC1B3 /* GameTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8919061D731DE2000FC1B3 /* GameTableViewController.m */; };
 		CA5D5B72B2790FE6F2110096 /* libPods-LiteReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AC3D4125AD43CF6E9DF284 /* libPods-LiteReader.a */; };
 /* End PBXBuildFile section */
 
@@ -301,6 +313,29 @@
 		ABE8ABE01CFED88300693078 /* bg_back_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_back_white@2x.png"; sourceTree = "<group>"; };
 		ABE8ABE31CFED8CE00693078 /* reader_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reader_more@2x.png"; sourceTree = "<group>"; };
 		ABE8ABE61D02A99300693078 /* r_drag-dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "r_drag-dot@2x.png"; sourceTree = "<group>"; };
+		BD8918E41D72C8CF000FC1B3 /* NewBookListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBookListModel.h; sourceTree = "<group>"; };
+		BD8918E51D72C8CF000FC1B3 /* NewBookListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBookListModel.m; sourceTree = "<group>"; };
+		BD8918E71D72CA84000FC1B3 /* MovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
+		BD8918E81D72CA84000FC1B3 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
+		BD8918EB1D72D45E000FC1B3 /* NewBookListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBookListTableViewController.h; sourceTree = "<group>"; };
+		BD8918EC1D72D45E000FC1B3 /* NewBookListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBookListTableViewController.m; sourceTree = "<group>"; };
+		BD8918EE1D72DFA0000FC1B3 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		BD8918F01D72E082000FC1B3 /* DetailsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsWebViewController.h; sourceTree = "<group>"; };
+		BD8918F11D72E082000FC1B3 /* DetailsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsWebViewController.m; sourceTree = "<group>"; };
+		BD8918F31D72E474000FC1B3 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		BD8918F41D72E474000FC1B3 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		BD8918F61D72E504000FC1B3 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		BD8918F71D72E504000FC1B3 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		BD8918F91D72E5FC000FC1B3 /* MovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieModel.h; sourceTree = "<group>"; };
+		BD8918FA1D72E5FC000FC1B3 /* MovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
+		BD8918FC1D7318A5000FC1B3 /* MovieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewController.h; sourceTree = "<group>"; };
+		BD8918FD1D7318A5000FC1B3 /* MovieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewController.m; sourceTree = "<group>"; };
+		BD8918FF1D731A66000FC1B3 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
+		BD8919001D731A66000FC1B3 /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
+		BD8919021D731BC6000FC1B3 /* GameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTableViewCell.h; sourceTree = "<group>"; };
+		BD8919031D731BC6000FC1B3 /* GameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTableViewCell.m; sourceTree = "<group>"; };
+		BD8919051D731DE2000FC1B3 /* GameTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTableViewController.h; sourceTree = "<group>"; };
+		BD8919061D731DE2000FC1B3 /* GameTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTableViewController.m; sourceTree = "<group>"; };
 		C743A1A76F27D916FCA1BF54 /* Pods-LSYReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSYReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSYReader/Pods-LSYReader.debug.xcconfig"; sourceTree = "<group>"; };
 		E23944297EB8E470298DF91A /* Pods-LSYReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSYReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSYReader/Pods-LSYReader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -383,9 +418,21 @@
 				517331B61D363198009089DE /* BookModel.h */,
 				517331BA1D363198009089DE /* ReadCollectionCell.h */,
 				515E19961D57776C0036B84D /* BookModel.m */,
+				BD8918F61D72E504000FC1B3 /* NewsModel.h */,
+				BD8918F91D72E5FC000FC1B3 /* MovieModel.h */,
+				BD8918FF1D731A66000FC1B3 /* GameModel.h */,
+				BD8919001D731A66000FC1B3 /* GameModel.m */,
+				BD8918FA1D72E5FC000FC1B3 /* MovieModel.m */,
+				BD8918F71D72E504000FC1B3 /* NewsModel.m */,
 				517331BB1D363198009089DE /* ReadCollectionCell.m */,
+				BD8919021D731BC6000FC1B3 /* GameTableViewCell.h */,
+				BD8919031D731BC6000FC1B3 /* GameTableViewCell.m */,
 				5131FA3D1D4B6DA500D36166 /* BookStoreTableViewCell.h */,
 				5131FA3E1D4B6DA500D36166 /* BookStoreTableViewCell.m */,
+				BD8918E71D72CA84000FC1B3 /* MovieTableViewCell.h */,
+				BD8918E81D72CA84000FC1B3 /* MovieTableViewCell.m */,
+				BD8918E41D72C8CF000FC1B3 /* NewBookListModel.h */,
+				BD8918E51D72C8CF000FC1B3 /* NewBookListModel.m */,
 			);
 			name = DataModel;
 			path = ../API;
@@ -588,6 +635,7 @@
 				5131FA471D4E099700D36166 /* UIRemoveControlMinus.png */,
 				5131FA481D4E099700D36166 /* UIRemoveControlMinus@2x.png */,
 				AB9A96C61CFC2EE80066030C /* Assets.xcassets */,
+				BD8918EA1D72D424000FC1B3 /* FindZone */,
 				AB9A96C81CFC2EE80066030C /* LaunchScreen.storyboard */,
 				AB9A96CB1CFC2EE80066030C /* Info.plist */,
 				AB9A96BA1CFC2EE80066030C /* Supporting Files */,
@@ -673,6 +721,7 @@
 				512E56721D58898100D5E184 /* Documents@2x.png */,
 				3486C1311D6D06AE0065CEDF /* exclusive_news@2x.png */,
 				3486C1321D6D06AE0065CEDF /* fun_movie@2x.png */,
+				BD8918EE1D72DFA0000FC1B3 /* placeholder.png */,
 				3486C1331D6D06AE0065CEDF /* geek_game@2x.png */,
 				3486C1341D6D06AE0065CEDF /* new_book@2x.png */,
 				5106EF441D24C8A600C33C11 /* back_nav@2x.png */,
@@ -700,6 +749,23 @@
 				09F21980D46ADBBD39C9315C /* Pods-LiteReader.dailybuild.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD8918EA1D72D424000FC1B3 /* FindZone */ = {
+			isa = PBXGroup;
+			children = (
+				BD8918EB1D72D45E000FC1B3 /* NewBookListTableViewController.h */,
+				BD8919051D731DE2000FC1B3 /* GameTableViewController.h */,
+				BD8919061D731DE2000FC1B3 /* GameTableViewController.m */,
+				BD8918EC1D72D45E000FC1B3 /* NewBookListTableViewController.m */,
+				BD8918FC1D7318A5000FC1B3 /* MovieTableViewController.h */,
+				BD8918FD1D7318A5000FC1B3 /* MovieTableViewController.m */,
+				BD8918F31D72E474000FC1B3 /* NewsTableViewController.h */,
+				BD8918F41D72E474000FC1B3 /* NewsTableViewController.m */,
+				BD8918F01D72E082000FC1B3 /* DetailsWebViewController.h */,
+				BD8918F11D72E082000FC1B3 /* DetailsWebViewController.m */,
+			);
+			name = FindZone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -774,6 +840,7 @@
 				8726DA4F1D0800A10072323A /* ic_add.png in Resources */,
 				344EEE0A1D6E56C000E67AAA /* 北京折叠（试读版）.epub in Resources */,
 				3486C1371D6D06AE0065CEDF /* geek_game@2x.png in Resources */,
+				BD8918EF1D72DFA0000FC1B3 /* placeholder.png in Resources */,
 				512E56731D58898100D5E184 /* Documents@2x.png in Resources */,
 				5106EF451D24C8A600C33C11 /* back_nav@2x.png in Resources */,
 				67C1A63E1D5A3D5D0077B041 /* Info.plist in Resources */,
@@ -865,20 +932,25 @@
 				87D8BD2B1CFFE5100087D8DA /* LSYViewPagerVC.m in Sources */,
 				871E610A1D1252B20047AAFE /* CXMLElement_CreationExtensions.m in Sources */,
 				871E61D61D12A66A0047AAFE /* GTMNSString+HTML.m in Sources */,
+				BD8918F81D72E504000FC1B3 /* NewsModel.m in Sources */,
 				AB9A96F41CFD27FC0066030C /* LSYChapterModel.mm in Sources */,
 				87D8BD311CFFE68E0087D8DA /* LSYReadView.m in Sources */,
 				AB9A96D71CFC2F6C0066030C /* LSYReadViewController.m in Sources */,
+				BD8918F51D72E474000FC1B3 /* NewsTableViewController.m in Sources */,
 				871E61CC1D1282B80047AAFE /* unzip.c in Sources */,
 				515E19971D57776C0036B84D /* BookModel.m in Sources */,
+				BD8918E91D72CA84000FC1B3 /* MovieTableViewCell.m in Sources */,
 				AB9A96E11CFC3A6A0066030C /* LSYReadParser.m in Sources */,
 				5131FA3F1D4B6DA500D36166 /* BookStoreTableViewCell.m in Sources */,
 				5106EF3F1D23CB0400C33C11 /* ZPDFPageModel.m in Sources */,
 				517331BE1D363198009089DE /* ReadCollectionCell.m in Sources */,
 				871E61111D1252B20047AAFE /* CTidy.m in Sources */,
 				871E61091D1252B20047AAFE /* CXMLElement.m in Sources */,
+				BD8918E61D72C8CF000FC1B3 /* NewBookListModel.m in Sources */,
 				67C1A6391D5A3D5D0077B041 /* FMDatabase.m in Sources */,
 				5131FA461D4B9B5100D36166 /* JSONParser.m in Sources */,
 				871E610C1D1252B20047AAFE /* CXMLNamespaceNode.m in Sources */,
+				BD8919011D731A66000FC1B3 /* GameModel.m in Sources */,
 				87D8BD3E1D0013ED0087D8DA /* LSYMarkVC.m in Sources */,
 				87D8BD2E1CFFE5880087D8DA /* LSYCatalogViewController.m in Sources */,
 				515F20C81D3904DB008FDFD9 /* PDFDocumentOutline.m in Sources */,
@@ -889,8 +961,10 @@
 				515503431D2FD8A1009E267F /* AboutTabBar.m in Sources */,
 				87D8BD381D0013CC0087D8DA /* LSYChapterVC.m in Sources */,
 				871E610B1D1252B20047AAFE /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				BD8918FB1D72E5FC000FC1B3 /* MovieModel.m in Sources */,
 				5106EF411D23CB0400C33C11 /* ZPDFView.m in Sources */,
 				67C1A63D1D5A3D5D0077B041 /* FMResultSet.m in Sources */,
+				BD8919071D731DE2000FC1B3 /* GameTableViewController.m in Sources */,
 				AB9A96EE1CFD27D90066030C /* LSYMarkModel.m in Sources */,
 				AB9A96BF1CFC2EE80066030C /* AppDelegate.m in Sources */,
 				ABE8ABDD1CFEBB8300693078 /* LSYBottomMenuView.m in Sources */,
@@ -906,6 +980,7 @@
 				871E61CA1D1282B80047AAFE /* ioapi.c in Sources */,
 				871E61061D1252B20047AAFE /* CXHTMLDocument.m in Sources */,
 				67C1A62A1D5A2BD30077B041 /* TWRDownloadManager.m in Sources */,
+				BD8919041D731BC6000FC1B3 /* GameTableViewCell.m in Sources */,
 				871E61101D1252B20047AAFE /* CXMLUnsupportedNode.m in Sources */,
 				67C1A62B1D5A2BD30077B041 /* TWRDownloadObject.m in Sources */,
 				871E61071D1252B20047AAFE /* CXMLDocument.m in Sources */,
@@ -920,13 +995,16 @@
 				871E61CB1D1282B80047AAFE /* mztools.c in Sources */,
 				3486C1281D6CC2E50065CEDF /* ExploreTabBar.m in Sources */,
 				871E610E1D1252B20047AAFE /* CXMLNode_PrivateExtensions.m in Sources */,
+				BD8918FE1D7318A5000FC1B3 /* MovieTableViewController.m in Sources */,
 				ABE8ABD71CFEBB2400693078 /* LSYMenuView.m in Sources */,
 				87D8BD3B1D0013DF0087D8DA /* LSYNoteVC.m in Sources */,
 				67C1A6411D5A3DCD0077B041 /* DBManager.m in Sources */,
 				871E61CD1D1282B80047AAFE /* zip.c in Sources */,
 				AB9A96BC1CFC2EE80066030C /* main.m in Sources */,
+				BD8918F21D72E082000FC1B3 /* DetailsWebViewController.m in Sources */,
 				871E61CE1D1282B80047AAFE /* ZipArchive.mm in Sources */,
 				AB9A96DE1CFC3A4D0066030C /* LSYReadConfig.m in Sources */,
+				BD8918ED1D72D45E000FC1B3 /* NewBookListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

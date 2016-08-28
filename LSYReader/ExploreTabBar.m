@@ -7,6 +7,11 @@
 //
 
 #import "ExploreTabBar.h"
+#import"NewsTableViewController.h"
+#import"NewBookListTableViewController.h"
+#import"MovieTableViewController.h"
+#import"GameTableViewController.h"
+
 static  NSString *exploreCell = @"exploreCell";
 @interface ExploreTabBar()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -98,21 +103,28 @@ static  NSString *exploreCell = @"exploreCell";
 {
     //当手指离开某行时，就让某行的选中状态消失
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    //UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     switch (indexPath.row){
-         case 0:
-            
-            
-    break;
-         case 1:
-            
-    break;
-         case 2:
-            
-    break;
-        case 3:
-            
+        case 0:{
+             NewBookListTableViewController* controller = [[NewBookListTableViewController alloc]init];
+            [self presentViewController:controller animated:YES completion:nil];
+             break;
+        }
+        case 1:{
+            NewsTableViewController* controller = [[NewsTableViewController alloc]init];
+            [self presentViewController:controller animated:YES completion:nil];
             break;
+        }
+            
+        case 2:{
+            GameTableViewController* controller = [[GameTableViewController alloc]init];
+            [self presentViewController:controller animated:YES completion:nil];
+            break;
+        }
+        case 3:{
+            MovieTableViewController* controller = [[MovieTableViewController alloc]init];
+            [self presentViewController:controller animated:YES completion:nil];
+            break;
+        }
     
     }
     
