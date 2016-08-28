@@ -53,6 +53,8 @@ static  NSString *cellId = @"cellIdentifier";
 -(void)viewDidLoad{
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.backBarButtonItem = item;
     //_dataArr = @[@"新书来啦",@"独家秘闻",@"极客游戏",@"科幻光影"];
     //AFNetworking 下载数据
     _url = @"http://o8wiem8yd.bkt.clouddn.com/newbook.json";
