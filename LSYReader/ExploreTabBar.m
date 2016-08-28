@@ -103,7 +103,6 @@ static  NSString *exploreCell = @"exploreCell";
 {
     //当手指离开某行时，就让某行的选中状态消失
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    UINavigationController* navi ;
     UIViewController*  controller;
     switch (indexPath.row){
         case 0:{
@@ -125,8 +124,10 @@ static  NSString *exploreCell = @"exploreCell";
         }
     
     }
-    navi = [[UINavigationController alloc]initWithRootViewController:controller];
-    [self presentViewController:navi animated:YES completion:nil];
+    //navi = [[UINavigationController alloc]initWithRootViewController:controller];
+    //[self presentViewController:navi animated:YES completion:nil];
+    [self.navigationController pushViewController:controller animated:YES];
+
     
     }
     

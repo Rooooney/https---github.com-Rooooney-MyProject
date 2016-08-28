@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface DetailsWebViewController : UIViewController<UIWebViewDelegate>
+#import "NJKWebViewProgressView.h"
+#import "NJKWebViewProgress.h"
+@interface DetailsWebViewController : UIViewController<UIWebViewDelegate,NJKWebViewProgressDelegate>
 @property(nonatomic,strong)UIWebView* webView;
 @property(nonatomic,strong)NSString* url;
 @end

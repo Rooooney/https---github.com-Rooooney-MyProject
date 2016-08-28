@@ -125,7 +125,7 @@ static  NSString *cellId = @"cellIdentifier";
     DetailsWebViewController* details = [[DetailsWebViewController alloc]init];
     NewBookListModel* itemModel =_dataArr[indexPath.row];
     details.url = itemModel.bookLink;
-    [self presentViewController:details animated:YES completion:nil];    
+    [self.navigationController pushViewController:details animated:YES];
 }
 
 

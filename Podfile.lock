@@ -26,6 +26,11 @@ PODS:
   - DTFoundation/UIKit (1.7.10):
     - DTFoundation/Core
   - MJRefresh (3.1.12)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -34,6 +39,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - DTCoreText (~> 1.6.10)
   - MJRefresh (~> 3.1.12)
+  - NJKWebViewProgress
   - SDWebImage (~> 3.8.1)
 
 SPEC CHECKSUMS:
@@ -41,8 +47,9 @@ SPEC CHECKSUMS:
   DTCoreText: 3ea8bba23dd2141ba18adb227a7dd33a822df1c4
   DTFoundation: 3b6b1b817d2a7fb02e7eaf2596c922a68145bd43
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: f201f36bb10cd904c37a405d8a1bf6cc0b437e25
+PODFILE CHECKSUM: 47138f63e7334824eb1c1b33cd64643b230aa3ff
 
 COCOAPODS: 1.0.1

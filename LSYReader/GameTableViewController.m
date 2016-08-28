@@ -127,7 +127,7 @@ static  NSString *cellId = @"cellIdentifier";
     DetailsWebViewController* details = [[DetailsWebViewController alloc]init];
     GameModel* itemModel =_dataArr[indexPath.row];
     details.url = itemModel.appLink;
-    [self presentViewController:details animated:YES completion:nil];
+    [self.navigationController pushViewController:details animated:YES];
 }
 
 @end

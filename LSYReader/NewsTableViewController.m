@@ -116,7 +116,7 @@ static  NSString *cellId = @"cellIdentifier";
     DetailsWebViewController* details = [[DetailsWebViewController alloc]init];
     NewsModel* itemModel =_dataArr[indexPath.row];
     details.url = itemModel.newsLink;
-    [self presentViewController:details animated:YES completion:nil];
+    [self.navigationController pushViewController:details animated:YES];
 }
 
 

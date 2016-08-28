@@ -124,7 +124,8 @@ static  NSString *cellId = @"cellIdentifier";
     DetailsWebViewController* details = [[DetailsWebViewController alloc]init];
     MovieModel* itemModel =_dataArr[indexPath.row];
     details.url = itemModel.movieLink;
-    [self presentViewController:details animated:YES completion:nil];
+    //[self presentViewController:details animated:YES completion:nil];
+    [self.navigationController pushViewController:details animated:YES];
 }
 
 

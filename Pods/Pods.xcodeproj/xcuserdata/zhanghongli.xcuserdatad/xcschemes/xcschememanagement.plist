@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NJKWebViewProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LiteReader.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,17 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0EFFFFE05343E52A1F07D4BE3E2CAF78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4523E86A925DD29CBBB2C8DE479BDF9E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>45B8F97D9E38A36046D328C034493287</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>53AE686D8996928174C813BE41AD0D10</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8F6AD1878E444A98D2F0DC0FB8421941</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AD1E2E7BA3DC4D9C3EE7E52DE1F8645E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC26589EBAAB5B8698A426BC90045646</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,9 +7,13 @@
 //
 
 #import "DetailsWebViewController.h"
+
 @interface DetailsWebViewController(){
+    NJKWebViewProgressView *_progressView;
+    NJKWebViewProgress *_progressProxy;
 }
 @property(nonatomic,strong)UIActivityIndicatorView* activityIndicator;
+
 @end
 
 @implementation DetailsWebViewController
@@ -26,13 +30,70 @@
     }
     return _webView;
 }
-
+-(void)viewWillLayoutSubviews{
+    
+    self.webView.frame = CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height);
+    
+}
 -(void)viewDidLoad{
     [super viewDidLoad];
-     NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    _progressProxy = [[NJKWebViewProgress alloc] init];
+    _webView.delegate = _progressProxy;
+    _progressProxy.webViewProxyDelegate = self;
+    _progressProxy.progressDelegate = self;
+    
+    CGFloat progressBarHeight = 2.f;
+    CGRect navigationBarBounds = self.navigationController.navigationBar.bounds;
+    CGRect barFrame = CGRectMake(0, navigationBarBounds.size.height - progressBarHeight, navigationBarBounds.size.width, progressBarHeight);
+    _progressView = [[NJKWebViewProgressView alloc] initWithFrame:barFrame];
+    _progressView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     [self.view addSubview: self.webView];
-    [self.webView loadRequest:request];
+    [self loadGoogle];
+     }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar addSubview:_progressView];
 }
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    // Remove progress view
+    // because UINavigationBar is shared with other ViewControllers
+    [_progressView removeFromSuperview];
+}
+
+- (IBAction)searchButtonPushed:(id)sender
+{
+    [self loadGoogle];
+}
+
+- (IBAction)reloadButtonPushed:(id)sender
+{
+    [_webView reload];
+}
+
+-(void)loadGoogle
+{
+   
+    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]];
+    [self.webView loadRequest:request];
+
+}
+
+#pragma mark - NJKWebViewProgressDelegate
+-(void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress
+{
+    [_progressView setProgress:progress animated:YES];
+    self.title = [_webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+}
+
+
+
 
 - (void) webViewDidStartLoad:(UIWebView *)webView
 {
@@ -58,6 +119,7 @@
     UIView *view = (UIView*)[self.view viewWithTag:108];
     [view removeFromSuperview];
     NSLog(@"webViewDidFinishLoad");
+    [_progressView removeFromSuperview];
 }
 - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
@@ -65,6 +127,7 @@
     [_activityIndicator stopAnimating];
     UIView *view = (UIView*)[self.view viewWithTag:108];
     [view removeFromSuperview];
+    [_progressView removeFromSuperview];
 }
 
 @end
