@@ -28,7 +28,6 @@
 		3486C1361D6D06AE0065CEDF /* fun_movie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3486C1321D6D06AE0065CEDF /* fun_movie@2x.png */; };
 		3486C1371D6D06AE0065CEDF /* geek_game@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3486C1331D6D06AE0065CEDF /* geek_game@2x.png */; };
 		3486C1381D6D06AE0065CEDF /* new_book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3486C1341D6D06AE0065CEDF /* new_book@2x.png */; };
-		363B68A89B23B9E02AD93A59 /* libPods-LSYReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7854115291649A810D39F51E /* libPods-LSYReader.a */; };
 		5104E0391D536CBC000B695E /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5104E0371D5350A3000B695E /* libMJRefresh.a */; };
 		5104E03C1D537787000B695E /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5104E03A1D5376B4000B695E /* libxml2.tbd */; };
 		5106EF3E1D23CB0400C33C11 /* ZPDFPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5106EF371D23CB0400C33C11 /* ZPDFPageController.m */; };
@@ -117,6 +116,7 @@
 		ABE8ABE21CFED88300693078 /* bg_back_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE8ABE01CFED88300693078 /* bg_back_white@2x.png */; };
 		ABE8ABE41CFED8CE00693078 /* reader_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE8ABE31CFED8CE00693078 /* reader_more@2x.png */; };
 		ABE8ABE71D02A99300693078 /* r_drag-dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE8ABE61D02A99300693078 /* r_drag-dot@2x.png */; };
+		CA5D5B72B2790FE6F2110096 /* libPods-LiteReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AC3D4125AD43CF6E9DF284 /* libPods-LiteReader.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +130,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00AC3D4125AD43CF6E9DF284 /* libPods-LiteReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiteReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F21980D46ADBBD39C9315C /* Pods-LiteReader.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiteReader.dailybuild.xcconfig"; path = "Pods/Target Support Files/Pods-LiteReader/Pods-LiteReader.dailybuild.xcconfig"; sourceTree = "<group>"; };
+		22DDE6999BE01BFE485209ED /* Pods-LiteReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiteReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiteReader/Pods-LiteReader.debug.xcconfig"; sourceTree = "<group>"; };
+		2C44027EA4683977BA70F70E /* Pods-LiteReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiteReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiteReader/Pods-LiteReader.release.xcconfig"; sourceTree = "<group>"; };
 		344EEE091D6E56C000E67AAA /* 北京折叠（试读版）.epub */ = {isa = PBXFileReference; lastKnownFileType = file; name = "北京折叠（试读版）.epub"; path = "../Third/北京折叠（试读版）.epub"; sourceTree = "<group>"; };
 		3486C1261D6CC2E50065CEDF /* ExploreTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreTabBar.h; sourceTree = "<group>"; };
 		3486C1271D6CC2E50065CEDF /* ExploreTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTabBar.m; sourceTree = "<group>"; };
@@ -310,7 +314,7 @@
 				5104E03C1D537787000B695E /* libxml2.tbd in Frameworks */,
 				5104E0391D536CBC000B695E /* libMJRefresh.a in Frameworks */,
 				871E617A1D127D880047AAFE /* libz.tbd in Frameworks */,
-				363B68A89B23B9E02AD93A59 /* libPods-LSYReader.a in Frameworks */,
+				CA5D5B72B2790FE6F2110096 /* libPods-LiteReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +328,7 @@
 				5104E03A1D5376B4000B695E /* libxml2.tbd */,
 				5104E0371D5350A3000B695E /* libMJRefresh.a */,
 				7854115291649A810D39F51E /* libPods-LSYReader.a */,
+				00AC3D4125AD43CF6E9DF284 /* libPods-LiteReader.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -690,6 +695,9 @@
 			children = (
 				C743A1A76F27D916FCA1BF54 /* Pods-LSYReader.debug.xcconfig */,
 				E23944297EB8E470298DF91A /* Pods-LSYReader.release.xcconfig */,
+				22DDE6999BE01BFE485209ED /* Pods-LiteReader.debug.xcconfig */,
+				2C44027EA4683977BA70F70E /* Pods-LiteReader.release.xcconfig */,
+				09F21980D46ADBBD39C9315C /* Pods-LiteReader.dailybuild.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -800,7 +808,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSYReader/Pods-LSYReader-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiteReader/Pods-LiteReader-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2430CD1A3337ADB09A462A6F /* [CP] Check Pods Manifest.lock */ = {
@@ -843,7 +851,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSYReader/Pods-LSYReader-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiteReader/Pods-LiteReader-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -995,11 +1003,12 @@
 		};
 		3486C1171D6BACEF0065CEDF /* DailyBuild */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E23944297EB8E470298DF91A /* Pods-LSYReader.release.xcconfig */;
+			baseConfigurationReference = 09F21980D46ADBBD39C9315C /* Pods-LiteReader.dailybuild.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Tencent Technology (Shenzhen) Co., Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tencent Technology (Shenzhen) Co., Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "LSYReader/LiteReader-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1011,7 +1020,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.penguinbaby.bookone;
 				PRODUCT_NAME = LiteReader;
-				PROVISIONING_PROFILE = "ae02a693-62e6-4bf8-bade-c706ff33050c";
+				PROVISIONING_PROFILE = liteapp_bookone;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = DailyBuild;
@@ -1127,10 +1136,11 @@
 		};
 		AB9A96CF1CFC2EE80066030C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C743A1A76F27D916FCA1BF54 /* Pods-LSYReader.debug.xcconfig */;
+			baseConfigurationReference = 22DDE6999BE01BFE485209ED /* Pods-LiteReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Haoran Sun (29U6C3456P)";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "LSYReader/LiteReader-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1142,18 +1152,19 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.penguinbaby.bookone;
 				PRODUCT_NAME = LiteReader;
-				PROVISIONING_PROFILE = "af0d2ba1-8fea-4648-8832-4ff7512e1cac";
+				PROVISIONING_PROFILE = liteapp_bookone;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AB9A96D01CFC2EE80066030C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E23944297EB8E470298DF91A /* Pods-LSYReader.release.xcconfig */;
+			baseConfigurationReference = 2C44027EA4683977BA70F70E /* Pods-LiteReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "LSYReader/LiteReader-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1165,7 +1176,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.penguinbaby.bookone;
 				PRODUCT_NAME = LiteReader;
-				PROVISIONING_PROFILE = "ae02a693-62e6-4bf8-bade-c706ff33050c";
+				PROVISIONING_PROFILE = liteapp_bookone_dis;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
