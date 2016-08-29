@@ -6,11 +6,8 @@
 //  Copyright © 2016年 okwei. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseTableViewCell.h"
 
-@interface GameTableViewCell : UITableViewCell
-@property(nonatomic,strong)UILabel* appNameLabel;
-@property(nonatomic,strong)UILabel* detailsLabel;
-@property(nonatomic,strong)UIImageView* appIconImg;
-@property(nonatomic,strong)UIImageView* screenShotImg;
+@interface GameTableViewCell : BaseTableViewCell
+
 @end

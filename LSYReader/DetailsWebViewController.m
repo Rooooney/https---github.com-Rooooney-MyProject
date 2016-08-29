@@ -120,7 +120,6 @@
     [view removeFromSuperview];
     NSLog(@"webViewDidFinishLoad");
     [_progressView removeFromSuperview];
-    [_progressView setHidden:YES];
 }
 - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
@@ -129,8 +128,6 @@
     UIView *view = (UIView*)[self.view viewWithTag:108];
     [view removeFromSuperview];
     [_progressView removeFromSuperview];
-    [_progressView setHidden:YES];
-
 }
 
 @end

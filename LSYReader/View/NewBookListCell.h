@@ -1,13 +1,13 @@
 //
-//  NewBookTableViewCell.h
+//  NewBookListCell.h
 //  LiteReader
 //
-//  Created by 张红利 on 16/8/28.
+//  Created by HD on 16/8/29.
 //  Copyright © 2016年 okwei. All rights reserved.
 //
 
 #import "BaseTableViewCell.h"
 
-@interface MovieTableViewCell : BaseTableViewCell
+@interface NewBookListCell : BaseTableViewCell
 
 @end

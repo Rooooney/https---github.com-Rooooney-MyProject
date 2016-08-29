@@ -31,21 +31,21 @@ static  NSString *cellId = @"cellIdentifier";
 }
 
 //分割线左对齐
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if ([cell respondsToSelector:@selector(setSeparatorInset:)])
-    {
-        [cell setSeparatorInset:UIEdgeInsetsZero];
-    }
-    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)])
-    {
-        [cell setPreservesSuperviewLayoutMargins:NO];
-    }
-    if ([cell respondsToSelector:@selector(setLayoutMargins:)])
-    {
-        [cell setLayoutMargins:UIEdgeInsetsZero];
-    }
-}
+//-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if ([cell respondsToSelector:@selector(setSeparatorInset:)])
+//    {
+//        [cell setSeparatorInset:UIEdgeInsetsZero];
+//    }
+//    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)])
+//    {
+//        [cell setPreservesSuperviewLayoutMargins:NO];
+//    }
+//    if ([cell respondsToSelector:@selector(setLayoutMargins:)])
+//    {
+//        [cell setLayoutMargins:UIEdgeInsetsZero];
+//    }
+//}
 
 
 
@@ -94,19 +94,14 @@ static  NSString *cellId = @"cellIdentifier";
 {
     MovieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (!cell) {
-        cell = [[MovieTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
+        cell = [[MovieTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
-    NSInteger rowNo = indexPath.row;
-    MovieModel* itemModel =_dataArr[rowNo];
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [cell configureDataForCellWithModel:_dataArr[indexPath.row]];
+//    NSInteger rowNo = indexPath.row;
+//    MovieModel* itemModel =_dataArr[rowNo];
     
-    cell.movieNameLabel.text =itemModel.movieName;
-    cell.starLabel.text =itemModel.starStr;
-    cell.actorsLabel.text =itemModel.actorsStr;
-    [cell.movieCoverImg sd_setImageWithURL:[NSURL URLWithString:itemModel.movieCoverLink]
-                      placeholderImage:[UIImage imageNamed:@"placeholder.png"]];//placeholder是占位图
     
-    cell.movieCoverImg.clipsToBounds = YES;
-    cell.movieCoverImg.contentMode = UIViewContentModeScaleAspectFill;
     return cell;
 }
 

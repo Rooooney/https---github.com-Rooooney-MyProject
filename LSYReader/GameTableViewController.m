@@ -96,27 +96,30 @@ static  NSString *cellId = @"cellIdentifier";
     if (!cell) {
         cell = [[GameTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
     }
-    NSInteger rowNo = indexPath.row;
-    GameModel* itemModel =_dataArr[rowNo];
-    
-    cell.appNameLabel.text =itemModel.appName;
-    cell.detailsLabel.text =itemModel.details;
-    [cell.appIconImg sd_setImageWithURL:[NSURL URLWithString:itemModel.appCoverLink]
-                          placeholderImage:[UIImage imageNamed:@"placeholder.png"]];//placeholder是占位图
-    [cell.screenShotImg sd_setImageWithURL:[NSURL URLWithString:itemModel.screenShotLink]
-                       placeholderImage:[UIImage imageNamed:@"placeholder.png"]];//placeholder是占位图
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 
-    cell.appIconImg.clipsToBounds = YES;
-    cell.screenShotImg.clipsToBounds = YES;
-    cell.appIconImg.contentMode = UIViewContentModeScaleAspectFill;
-    cell.screenShotImg.contentMode = UIViewContentModeScaleAspectFill;
+    [cell configureDataForCellWithModel:_dataArr[indexPath.row]];
+//    NSInteger rowNo = indexPath.row;
+//    GameModel* itemModel =_dataArr[rowNo];
+    
+//    cell.appNameLabel.text =itemModel.appName;
+//    cell.detailsLabel.text =itemModel.details;
+//    [cell.appIconImg sd_setImageWithURL:[NSURL URLWithString:itemModel.appCoverLink]
+//                          placeholderImage:[UIImage imageNamed:@"placeholder.png"]];//placeholder是占位图
+//    [cell.screenShotImg sd_setImageWithURL:[NSURL URLWithString:itemModel.screenShotLink]
+//                       placeholderImage:[UIImage imageNamed:@"placeholder.png"]];//placeholder是占位图
+//
+//    cell.appIconImg.clipsToBounds = YES;
+//    cell.screenShotImg.clipsToBounds = YES;
+//    cell.appIconImg.contentMode = UIViewContentModeScaleAspectFill;
+//    cell.screenShotImg.contentMode = UIViewContentModeScaleAspectFill;
     return cell;
 }
 
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return  88.0f;
+    return  5+50+5+120+5;
 }
 
 

@@ -11,6 +11,8 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "DetailsWebViewController.h"
 #import"AFNetworking.h"
+#import "NewBookListCell.h"
+
 static  NSString *cellId = @"cellIdentifier";
 @interface NewBookListTableViewController()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -94,20 +96,26 @@ static  NSString *cellId = @"cellIdentifier";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
-    }
-    NSInteger rowNo = indexPath.row;
-    NewBookListModel* itemModel =_dataArr[rowNo];
-    cell.textLabel.text =itemModel.bookName;
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:itemModel.bookCoverLink]
-                      placeholderImage:[UIImage imageNamed:@"placeholder.png"]];//placeholder是占位图
-
-    cell.imageView.clipsToBounds = YES;
-    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
-    cell.detailTextLabel.text = itemModel.pubInfo;
-    cell.accessoryType =UITableViewCellAccessoryDisclosureIndicator;//cell的右边有一个小箭头,距离右边有十几像素；
+    
+    NewBookListCell *cell = [NewBookListCell dequeueReusableCellWithTableView:tableView];
+    [cell configureDataForCellWithModel:_dataArr[indexPath.row]];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
+//    }
+//    
+//    [cell configureDataForCellWithModel];
+//    NSInteger rowNo = indexPath.row;
+//    NewBookListModel* itemModel =_dataArr[rowNo];
+//    cell.textLabel.text =itemModel.bookName;
+//    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:itemModel.bookCoverLink]
+//                      placeholderImage:[UIImage imageNamed:@"placeholder.png"]];//placeholder是占位图
+//    cell.imageView.frame = CGRectMake(5, 4, 60, 88-4-4);
+//
+//    cell.imageView.clipsToBounds = YES;
+//    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
+//    cell.detailTextLabel.text = itemModel.pubInfo;
+//    cell.accessoryType =UITableViewCellAccessoryDisclosureIndicator;//cell的右边有一个小箭头,距离右边有十几像素；
     return cell;
 }
 

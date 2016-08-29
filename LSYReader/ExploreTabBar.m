@@ -11,11 +11,13 @@
 #import"NewBookListTableViewController.h"
 #import"MovieTableViewController.h"
 #import"GameTableViewController.h"
+#import "DiscoveryModel.h"
+#import "DiscoveryCell.h"
 
 static  NSString *exploreCell = @"exploreCell";
 @interface ExploreTabBar()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
-@property(nonatomic,strong)NSArray* dataArr;
+@property(nonatomic,strong)NSMutableArray* dataArr;
 @property(nonatomic,strong)NSArray* iconArr;
 @property(nonatomic,strong)NSArray* detailsArr;
 @end
@@ -55,9 +57,20 @@ static  NSString *exploreCell = @"exploreCell";
 -(void)viewDidLoad{
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    _dataArr = @[@"新书来啦",@"独家秘闻",@"极客游戏",@"科幻光影"];
-    _iconArr = @[@"new_book.png",@"exclusive_news.png",@"geek_game.png",@"fun_movie.png"];
-    _detailsArr = @[@"精品新书，独家首发！",@"无穷未解之谜，尽在这里！",@"这些烧脑游戏，是否敢来尝试？",@"精品科幻电影，一定别错过！"];
+    NSArray *titlearray = @[@"新书来啦",@"独家秘闻",@"极客游戏",@"科幻光影"];
+    NSArray *iconarray = @[@"new_book.png",@"exclusive_news.png",@"geek_game.png",@"fun_movie.png"];
+    NSArray *detailsarray = @[@"精品新书，独家首发！",@"无穷未解之谜，尽在这里！",@"这些烧脑游戏，是否敢来尝试？",@"精品科幻电影，一定别错过！"];
+    
+    self.dataArr = [[NSMutableArray alloc] initWithCapacity:0];
+    
+    for (int i=0; i<titlearray.count; i++) {
+        DiscoveryModel *model = [[DiscoveryModel alloc] init];
+        model.title = titlearray[i];
+        model.icon = iconarray[i];
+        model.detailText = detailsarray[i];
+        
+        [self.dataArr addObject:model];
+    }
     [self.view addSubview:self.tableView];
 }
 
@@ -78,17 +91,22 @@ static  NSString *exploreCell = @"exploreCell";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:exploreCell];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:exploreCell];
-    }
-    NSInteger rowNo = indexPath.row;
-    cell.textLabel.text = _dataArr[rowNo];
-    cell.imageView.image = [UIImage imageNamed:_iconArr[rowNo]];
-    cell.imageView.clipsToBounds = YES;
-    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
-    cell.detailTextLabel.text = _detailsArr[rowNo];
-    cell.accessoryType =UITableViewCellAccessoryDisclosureIndicator;//cell的右边有一个小箭头,距离右边有十几像素；
+    
+    DiscoveryCell *cell = [DiscoveryCell dequeueReusableCellWithTableView:tableView];
+    [cell configureDataForCellWithModel:self.dataArr[indexPath.row]];
+    
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:exploreCell];
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:exploreCell];
+//    }
+//    NSInteger rowNo = indexPath.row;
+//    cell.textLabel.text = _dataArr[rowNo];
+//    cell.imageView.image = [UIImage imageNamed:_iconArr[rowNo]];
+//    cell.imageView.frame = CGRectMake(5, 4, 60, 88-4-4);
+//    cell.imageView.contentMode = UIViewContentModeScaleToFill;
+//    cell.imageView.clipsToBounds = YES;
+//    cell.detailTextLabel.text = _detailsArr[rowNo];
+//    cell.accessoryType =UITableViewCellAccessoryDisclosureIndicator;//cell的右边有一个小箭头,距离右边有十几像素；
     return cell;
 }
 
@@ -124,17 +142,13 @@ static  NSString *exploreCell = @"exploreCell";
         }
     
     }
-    //navi = [[UINavigationController alloc]initWithRootViewController:controller];
-    //[self presentViewController:navi animated:YES completion:nil];
-    [self.navigationController pushViewController:controller animated:YES];
 
     
-    }
+    [self.navigationController pushViewController:controller animated:YES];
     
-//    [cell setSelectionStyle:UITableViewCellSelectionStyleNone]; //（这种是没有点击后的阴影效果)
-//    if ([self.delegate respondsToSelector:@selector(catalog:didSelectChapter:page:)]) {
-//        [self.delegate catalog:nil didSelectChapter:_readModel.marks[indexPath.row].recordModel.chapter page:_readModel.marks[indexPath.row].recordModel.page];
-//    }
+}
+
+
 
 
 
